@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background-color: lightblue;
+}
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.main_div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background: lightblue;
+}
+
+#input_id {
+  margin: 1rem;
+  border: none;
+  outline: none;
+  margin-right: 1rem;
+  background: transparent;
+  border-bottom: 2px solid blue;
+  text-align: center;
+  width: 15rem;
+}
+
+h1 {
+  font-family: "Balsamiq Sans", cursive;
+  letter-spacing: 4px;
+  text-transform: capitalize;
+}
+.input_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.textarea {
+  width: 15rem;
+  border: 2px solid #86b7fe;
+  outline: none;
+  border-radius: 5px;
+  text-align: center;
+  resize: none;
+}
+.addbtn {
+  margin-top: 3rem;
+}
+.notes {
+  margin-top: 2rem;
+  display: grid;
+  width: 100%;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 2.25rem;
+  padding: 3rem;
+}
+.btndiv {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+p {
+  word-wrap: break-word;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .notes {
+    margin-top: 2rem;
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2.25rem;
+    padding: 3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .notes {
+    margin-top: 2rem;
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto;
+    grid-gap: 2.25rem;
+    padding: 3rem;
+  }
+}
+.delbtn:hover {
+  color: rgb(250, 35, 35);
+  transform: translateY(-2px);
+  transform: scale(1.1);
+}
+.savebtn:hover {
+  color: #05CE91;
+  transform: translateY(-2px);
+  transform: scale(1.1);
+}
+.editbtn:hover {
+  color: rgb(144, 66, 8);
+  transform: translateY(-2px);
+  transform: scale(1.1);
+}
+
+.favborder:hover {
+  transform: translateY(-2px);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.favfull:hover {
+  transform: translateY(-2px);
+  transform: scale(1.1);
+  cursor: pointer;
+  
+}
