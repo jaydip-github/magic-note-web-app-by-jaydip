@@ -89,10 +89,5 @@ app.patch("/updateval/:id/:title/:content", (req, res) => {
   // <---------------------->
 
 
-//production logic
-if(process.env.NODE_ENV=='production'){
-  app.use(express.static('client/build'));
-}
-
 
 app.listen(PORT);
